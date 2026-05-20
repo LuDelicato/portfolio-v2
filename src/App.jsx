@@ -152,16 +152,16 @@ export default function App() {
             Projects
           </a>
           <a
-            href="#contact"
-            className="text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-all hover:translate-x-1 font-semibold"
-          >
-            Contact
-          </a>
-          <a
             href="#hobbies"
             className="text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-all hover:translate-x-1 font-semibold"
           >
             Hobbies
+          </a>
+          <a
+            href="#contact"
+            className="text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-all hover:translate-x-1 font-semibold"
+          >
+            Contact
           </a>
         </div>
       </aside>
