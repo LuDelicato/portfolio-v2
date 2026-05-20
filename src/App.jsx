@@ -12,7 +12,7 @@ export default function App() {
     <div className="min-h-screen bg-[#0a0a0a] text-zinc-300 antialiased selection:bg-zinc-800 selection:text-white">
       <header className="fixed top-0 left-0 w-full p-4 md:p-6 bg-[#0a0a0a]/80 backdrop-blur-md z-50 border-b border-zinc-900/50">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <a href="#" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img
               src="/logo.webp"
               alt="Luanna Delicato Logo"
