@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: #0a0a0a;
+  --color-bg-card: #111111;
+}
+
+body {
+  background-color: var(--color-bg-base);
+  color: #d4d4d8;
+  font-family: "Inter", system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
