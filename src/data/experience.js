@@ -119,14 +119,38 @@ export const experienceData = [
       },
     ],
   },
+
   {
     id: 3,
+    company: "Instacart",
+    location: "US (Remote)",
+    logo: "/instacart_logo.webp",
+    totalDuration: "Jan 2020 to Mar 2020",
+    roles: [
+      {
+        id: "3a",
+        title: "B2B Service Advisor",
+        date: "",
+        short:
+          "Direct help to partners, re-schedule, edit, cancel orders. Live chat support",
+        details: [
+          "Coordinated real-time partner deliveries via live chat and CRM, managing rescheduling and order alterations.",
+          "Tracked platform technical issues using Jira to improve operational efficiency for delivery partners.",
+          "Identified complex operational bottlenecks and escalated critical cases to the CX team for rapid resolution.",
+          "Provided high-volume, real-time assistance to partners, maintaining high service standards in a fast-paced remote environment through live chat.",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 4,
     company: "Oldschool Gaia",
     location: "Vila Nova de Gaia (Remote)",
     logo: "/oldschool_logo.webp",
     roles: [
       {
-        id: "3a",
+        id: "4a",
         title: "Web Assistant & Back-Office Administrator",
         date: "Dec 2016 to Feb 2026",
         short: "Web design, documentation, technical assistance",
@@ -138,13 +162,13 @@ export const experienceData = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     company: "Teleperformance",
     location: "Porto (On Site)",
     logo: "/teleperformance_logo.webp",
     roles: [
       {
-        id: "4a",
+        id: "5a",
         title: "Operations & Quality Specialist",
         date: "Oct 2015 to Apr 2018",
         short:
