@@ -145,12 +145,33 @@ export const experienceData = [
 
   {
     id: 4,
+    company: "Millennium BCP",
+    location: "Sintra (On Site)",
+    logo: "/mbcp.jpg",
+    totalDuration: "May 2018 to Dec 2019",
+    roles: [
+      {
+        id: "4a",
+        title: "Customer Advisor",
+        date: "",
+        short: "Customer Support, Financial Support, Card Operations",
+        details: [
+          "Analyzed financial statements and transactions to uphold regulatory integrity and support internal audits.",
+          "Ensured 100% accuracy in regulatory documentation for a diverse client portfolio.",
+          "Provided full crisis support to customers traveling who were unable to use their cards or accounts.",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 5,
     company: "Oldschool Gaia",
     location: "Vila Nova de Gaia (Remote)",
     logo: "/oldschool_logo.webp",
     roles: [
       {
-        id: "4a",
+        id: "5a",
         title: "Web Assistant & Back-Office Administrator",
         date: "Dec 2016 to Feb 2026",
         short: "Web design, documentation, technical assistance",
@@ -162,13 +183,13 @@ export const experienceData = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     company: "Teleperformance",
     location: "Porto (On Site)",
     logo: "/teleperformance_logo.webp",
     roles: [
       {
-        id: "5a",
+        id: "6a",
         title: "Operations & Quality Specialist",
         date: "Oct 2015 to Apr 2018",
         short:
