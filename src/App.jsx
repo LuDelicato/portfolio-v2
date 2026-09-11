@@ -67,7 +67,17 @@ export default function App() {
             Experience
           </a>
 
-          {/* Concentrix*/}
+          {/* Nox Medical */}
+          <div className="flex flex-col gap-2 pl-3 border-l border-zinc-900">
+            <a
+              href="#company-nox"
+              className="text-[11px] text-zinc-400 hover:text-white transition-colors font-medium"
+            >
+              Nox Medical
+            </a>
+          </div>
+
+          {/* Concentrix */}
           <div className="flex flex-col gap-2 pl-3 border-l border-zinc-900">
             <a
               href="#company-concentrix"
@@ -77,7 +87,7 @@ export default function App() {
             </a>
           </div>
 
-          {/* Airbnb*/}
+          {/* Airbnb */}
           <div className="flex flex-col gap-2 pl-3 border-l border-zinc-900">
             <a
               href="#company-airbnb"
@@ -99,13 +109,13 @@ export default function App() {
                 Digital Specialist
               </a>
               <a
-                href="#role-t2"
+                href="#role-resolution"
                 className="hover:text-zinc-300 transition-colors"
               >
                 Resolution Specialist T2
               </a>
               <a
-                href="#role-t1"
+                href="#role-resolution"
                 className="hover:text-zinc-300 transition-colors"
               >
                 Resolution Specialist T1

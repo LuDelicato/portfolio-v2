@@ -1,12 +1,34 @@
 export const experienceData = [
   {
     id: 1,
+    company: "Nox Medical",
+    location: "Remote",
+    logo: "/noxmedical_logo.webp",
+    roles: [
+      {
+        id: "1a",
+        title: "Technical Support Specialist",
+        date: "Jul 2026 to Present",
+        short:
+          "Tier-2 diagnostic resolutions, cloud & hardware troubleshooting, cross-functional escalation, regulatory compliance",
+        details: [
+          "Provide advanced Tier-2 technical support across global medical hardware, desktop software, and cloud systems, serving as the core escalation bridge between Tier-1 agents and Tier-3 R&D developers.",
+          "Investigate, document, and triage complex software and hardware defects via Jira and Zendesk, delivering detailed reproduction steps, logs, and diagnostic feedback to development boards.",
+          "Lead technical communication with international healthcare providers, distributors, and global end users under strict HIPAA, GDPR, and medical device compliance standards.",
+          "Act as a product super-user performing hardware and software version testing, handling complaint lifecycle documentation, and authoring comprehensive internal technical runbooks.",
+          "Cover global mission-critical operations, on-call rotational duty, and night coverage for APAC/Australia regions to maintain uninterrupted SLA adherence.",
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
     company: "Concentrix",
     location: "Porto (Hybrid)",
     logo: "/concentrix_logo.webp",
     roles: [
       {
-        id: "1a",
+        id: "2a",
         title: "Technical Documentation & Reporting Specialist",
         date: "Oct 2024 to Feb 2026",
         short:
@@ -21,7 +43,7 @@ export const experienceData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     company: "Airbnb",
     location: "Porto (Remote)",
     totalDuration: "Mar 2020 to Nov 2023",
@@ -35,7 +57,6 @@ export const experienceData = [
         name: "Payments Compliance: Economic Sanctions",
         link: "/image_8aa33b.png",
       },
-
       {
         name: "CX & TNS: Human Trafficking Prevention Training",
         link: "/image_8aa34b.png",
@@ -44,17 +65,14 @@ export const experienceData = [
         name: "CS: Foundation v1",
         link: "/image_8aa35b.png",
       },
-
       {
         name: "Introduction to Privacy",
         link: "/image_8aa37b.png",
       },
-
       {
         name: "CS: Foundation v1 - Privacy - Specialist",
         link: "/image_8aa36b.png",
       },
-
       {
         name: "Inclusion @ Airbnb",
         link: "/image_8aa38b.png",
@@ -62,7 +80,7 @@ export const experienceData = [
     ],
     roles: [
       {
-        id: "2a",
+        id: "3a",
         title: "Experiences Team",
         date: "Nov 2020 to Nov 2023",
         short: "Customer Service, Remote User Support",
@@ -73,7 +91,7 @@ export const experienceData = [
         ],
       },
       {
-        id: "2b",
+        id: "3b",
         title: "Digital Specialist",
         date: "Mar 2020 to Nov 2023",
         short: "Workflow optimization, dispute resolution",
@@ -84,7 +102,7 @@ export const experienceData = [
         ],
       },
       {
-        id: "2c",
+        id: "3c",
         title: "Resolution Specialist T2",
         date: "Jul 2020 to Nov 2020",
         short: "Mediation, policy enforcement",
@@ -97,7 +115,7 @@ export const experienceData = [
         ],
       },
       {
-        id: "2d",
+        id: "3d",
         title: "Resolution Specialist T1",
         date: "Apr 2020 to Jul 2020",
         short: "Frontline support, compliance",
@@ -109,7 +127,7 @@ export const experienceData = [
         ],
       },
       {
-        id: "2e",
+        id: "3e",
         title: "Community Education",
         date: "Mar 2020 to Apr 2020",
         short: "User onboarding, basic support",
@@ -119,16 +137,15 @@ export const experienceData = [
       },
     ],
   },
-
   {
-    id: 3,
+    id: 4,
     company: "Instacart",
     location: "US (Remote)",
     logo: "/instacart_logo.webp",
     totalDuration: "Jan 2020 to Mar 2020",
     roles: [
       {
-        id: "3a",
+        id: "4a",
         title: "B2B Service Advisor",
         date: "",
         short:
@@ -142,16 +159,15 @@ export const experienceData = [
       },
     ],
   },
-
   {
-    id: 4,
+    id: 5,
     company: "Millennium BCP",
     location: "Sintra (On Site)",
     logo: "/mbcp.jpg",
     totalDuration: "May 2018 to Dec 2019",
     roles: [
       {
-        id: "4a",
+        id: "5a",
         title: "Customer Advisor",
         date: "",
         short: "Customer Support, Financial Support, Card Operations",
@@ -163,15 +179,14 @@ export const experienceData = [
       },
     ],
   },
-
   {
-    id: 5,
+    id: 6,
     company: "Oldschool Gaia",
     location: "Vila Nova de Gaia (Remote)",
     logo: "/oldschool_logo.webp",
     roles: [
       {
-        id: "5a",
+        id: "6a",
         title: "Web Assistant & Back-Office Administrator",
         date: "Dec 2016 to Feb 2026",
         short: "Web design, documentation, technical assistance",
@@ -183,13 +198,13 @@ export const experienceData = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     company: "Teleperformance",
     location: "Porto (On Site)",
     logo: "/teleperformance_logo.webp",
     roles: [
       {
-        id: "6a",
+        id: "7a",
         title: "Operations & Quality Specialist",
         date: "Oct 2015 to Apr 2018",
         short:
