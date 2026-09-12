@@ -77,13 +77,13 @@ export default function App() {
             </a>
           </div>
 
-          {/* Concentrix */}
+          {/* Kneip */}
           <div className="flex flex-col gap-2 pl-3 border-l border-zinc-900">
             <a
-              href="#company-concentrix"
+              href="#company-kneip"
               className="text-[11px] text-zinc-400 hover:text-white transition-colors font-medium"
             >
-              Concentrix
+              Kneip
             </a>
           </div>
 

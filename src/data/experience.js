@@ -2,7 +2,7 @@ export const experienceData = [
   {
     id: 1,
     company: "Nox Medical",
-    location: "Remote",
+    location: "Porto (Remote)",
     logo: "/noxmedical_logo.webp",
     roles: [
       {
@@ -23,9 +23,9 @@ export const experienceData = [
   },
   {
     id: 2,
-    company: "Concentrix",
+    company: "Kneip - Deutsche Börse Group",
     location: "Porto (Hybrid)",
-    logo: "/concentrix_logo.webp",
+    logo: "/deutsche_borse_logo.webp",
     roles: [
       {
         id: "2a",
