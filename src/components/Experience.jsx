@@ -9,7 +9,6 @@ import {
 } from "lucide-react";
 
 export default function Experience() {
-  // Initialize state with only the first company block expanded
   const [expandedCompanies, setExpandedCompanies] = useState({
     1: true,
   });
@@ -22,23 +21,21 @@ export default function Experience() {
   };
 
   useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash;
-      if (!hash) return;
+    const handleTargetNavigation = (target) => {
+      if (!target) return;
 
       let targetSlug = "";
       let isRole = false;
 
-      if (hash.startsWith("#role-")) {
-        targetSlug = hash.replace("#role-", "");
+      if (target.startsWith("role-")) {
+        targetSlug = target.replace("role-", "");
         isRole = true;
-      } else if (hash.startsWith("#company-")) {
-        targetSlug = hash.replace("#company-", "");
+      } else if (target.startsWith("company-")) {
+        targetSlug = target.replace("company-", "");
       } else {
         return;
       }
 
-      // Find the company containing either the matched company slug or nested role slug
       const parentCompany = experienceData.find((job) => {
         const companySlug = job.company
           .toLowerCase()
@@ -62,15 +59,27 @@ export default function Experience() {
         }));
 
         setTimeout(() => {
-          document.querySelector(hash)?.scrollIntoView({ behavior: "smooth" });
+          document
+            .getElementById(target)
+            ?.scrollIntoView({ behavior: "smooth" });
         }, 100);
       }
     };
 
+    const handleCustomEvent = (e) => handleTargetNavigation(e.detail);
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace("#", "");
+      if (hash) handleTargetNavigation(hash);
+    };
+
+    window.addEventListener("expand-and-scroll", handleCustomEvent);
     window.addEventListener("hashchange", handleHashChange);
     handleHashChange();
 
-    return () => window.removeEventListener("hashchange", handleHashChange);
+    return () => {
+      window.removeEventListener("expand-and-scroll", handleCustomEvent);
+      window.removeEventListener("hashchange", handleHashChange);
+    };
   }, []);
 
   return (
@@ -114,7 +123,7 @@ export default function Experience() {
 
                 <button
                   onClick={() => toggleCompany(jobBlock.id)}
-                  className="w-full flex justify-between items-center text-left mb-6 group focus:outline-none"
+                  className="w-full flex justify-between items-center text-left mb-6 group focus:outline-none cursor-pointer"
                 >
                   <div className="pr-4">
                     <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight group-hover:text-zinc-200 transition-colors">
